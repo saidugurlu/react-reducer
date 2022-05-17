@@ -15,12 +15,14 @@ const reducer = (state, action) => {
 				lastAction: 'decrement',
 				whenLastClicked: String(new Date())
 			};
+      break;
 		case 'up':
 			return {
 				number: state.number + 1,
 				lastAction: 'increment',
 				whenLastClicked: String(new Date())
 			};
+      break;
 	}
 };
 
